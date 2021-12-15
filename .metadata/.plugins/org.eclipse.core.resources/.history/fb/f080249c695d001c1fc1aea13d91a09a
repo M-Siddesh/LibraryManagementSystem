@@ -1,0 +1,48 @@
+package com.example.libraryManagement.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.example.libraryManagement.entity.Subscription;
+import com.example.libraryManagement.repository.SubscriptionRespository;
+
+@Service
+public class BorrowServiceImpl implements SubscriberService{
+	
+	@Autowired
+	SubscriptionRespository repo;
+
+	@Override
+	public List<Subscription> findAll() {
+		// TODO Auto-generated method stub
+		return repo.findAll();
+	}
+
+	@Override
+	public Subscription findByuserId(Long userId) {
+		// TODO Auto-generated method stub
+		return repo.getById(userId);
+	}
+
+	@Override
+	public void createrBorrow(Subscription borrow) {
+		// TODO Auto-generated method stub
+		repo.save(borrow);
+		
+	}
+
+	@Override
+	public void updateBorrow(Subscription borrow) {
+		// TODO Auto-generated method stub
+		repo.save(borrow);
+	}
+
+	@Override
+	public void deleteBorrow(Long isbn) {
+		// TODO Auto-generated method stub
+		repo.deleteById(isbn);
+	}
+
+}

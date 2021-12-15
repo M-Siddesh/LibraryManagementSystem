@@ -1,0 +1,15 @@
+package com.example.libraryManagement.service;
+
+import java.util.List;
+
+import com.example.libraryManagement.entity.Subscription;
+
+public interface BorrowService {
+	
+	List<Subscription> findAll();
+	Subscription findByuserId(Long userId);
+	void createrBorrow(Subscription borrow);
+	void updateBorrow(Subscription borrow);
+	void deleteBorrow(Long isbn);
+
+}

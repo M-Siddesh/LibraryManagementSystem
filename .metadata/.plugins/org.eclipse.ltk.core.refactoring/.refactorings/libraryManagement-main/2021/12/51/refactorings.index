@@ -1,0 +1,20 @@
+1639545369509	Rename type 'BorrowController'
+1639545478189	Delete element
+1639545484373	Delete element
+1639545491552	Delete element
+1639545502635	Delete element
+1639545507416	Delete element
+1639545570828	Rename type 'Borrow'
+1639545990599	Rename method 'findByTitle'
+1639546216514	Rename type 'BorrowRespository'
+1639546275531	Rename method 'findByAuthor'
+1639546376222	Rename type 'BorrowService'
+1639547021506	Rename type 'BorrowServiceImpl'
+1639554498057	Rename method 'getBorrows'
+1639554528048	Rename method 'createBorrow'
+1639554656832	Rename method 'getBooks'
+1639554865102	Rename type 'Book'
+1639554883706	Rename type 'BookRepository'
+1639554897555	Rename type 'BookService'
+1639554906558	Rename type 'BookServiceImpl'
+1639554915184	Rename type 'BookServiceImplTest'
